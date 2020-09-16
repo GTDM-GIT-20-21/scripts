@@ -23,7 +23,8 @@ echo "Tercera línea" >> fichero
 git add fichero
 git commit -m "Tercer commit"
 
-git branch iss53
+git branch hotfix
+git branch develop
 
 echo "Cuarta línea" >> fichero
 git add fichero
@@ -37,18 +38,18 @@ echo "Sexta línea" >> fichero
 git add fichero
 git commit -m "Sexta commit"
 
-git checkout iss53
+git checkout hotfix
 
 echo -e -n "Primera línea\n\
 Esta es distinta\n\
 Tercera línea\n\
 Fourth line\n" > fichero
 git add fichero
-git commit -m "Primer commit desde iss53"
+git commit -m "Primer commit desde hotfix"
 
 echo "Una última línea más" >> fichero
 git add fichero
-git commit -m "Segundo commit desde iss53"
+git commit -m "Segundo commit desde hotfix"
 
 git checkout master
 
