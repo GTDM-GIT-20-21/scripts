@@ -1,8 +1,13 @@
 #!/bin/bash
 
-mkdir ~/Desktop/EjemploComandos
+# Genera directorios y ficheros con comandos en CLI
 
-cd ~/Desktop/EjemploComandos
+directorio=~/Desktop/TS1-GTDM/EjemploComandos
+mkdir -p $directorio
+
+echo "Directorio: " $directorio
+
+cd $directorio
 
 mkdir dir1
 cd dir1
