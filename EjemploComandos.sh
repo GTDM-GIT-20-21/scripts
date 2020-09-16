@@ -1,13 +1,14 @@
 #!/bin/bash
 
-# Genera directorios y ficheros con comandos en CLI
+# Genera un repositorio para observar el funcionamiento de algunos comandos en CLI
 
 directorio=~/Desktop/TS1-GTDM/EjemploComandos
 mkdir -p $directorio
 
-echo "Directorio: " $directorio
-
 cd $directorio
+echo -en "\n---------Directorio de pruebas:" `pwd` "\n\n"
+rm -rf $directorio/.git dir1 dir2
+
 
 mkdir dir1
 cd dir1

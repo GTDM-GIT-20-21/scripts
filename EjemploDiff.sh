@@ -6,6 +6,7 @@ directorio=~/Desktop/TS1-GTDM/EjemploDiff
 mkdir -p $directorio
 
 cd $directorio
+echo -en "\n---------Directorio de pruebas:" `pwd` "\n\n"
 rm -rf $directorio/.git
 
 git init
